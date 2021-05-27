@@ -1,0 +1,15 @@
+<h1>Interesting URLs </h1>
+{% for ele in text %}
+    <text><strong>{{forloop.counter}} - Title- {{ele.name}}</strong></text> <br>
+    <text> <b>URL: {{ele.url}}</text></b>
+    <br>
+    <text>Desciption - {{ele.des}}</text>
+    <br> <br>
+{% endfor %}
+
+<br><br>
+<h1>Non-Interesting URLs </h1>
+{% for ele in links %}
+    <text>URL- {{ele}}</text> 
+    <br> <br>
+{% endfor %}
